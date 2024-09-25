@@ -30,7 +30,6 @@ import coil.compose.rememberAsyncImagePainter
                      viewState:MainViewModel.RecipeState,
                      navigateToDetail:(Category)->Unit){
         val recipeViewModel: MainViewModel= viewModel()
-       // val viewState by recipeViewModel.categoriesState
 
     Box( modifier=Modifier.fillMaxSize()){
         when{
@@ -58,7 +57,6 @@ fun CategoryScreen(categories : List<Category>,
     }
 }
 }
-// How each Items looks like
 @Composable
 fun CategoryItem(category: Category,
                  navigateToDetail:(Category)->Unit){
